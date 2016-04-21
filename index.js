@@ -9,5 +9,5 @@ program
   .option('-n, --cards <n>', 'Number of cards in the deck', parseInt)
   .parse(process.argv)
 
-var dealer = new Dealer({numberOfCards: program.cards})
+const dealer = new Dealer({numberOfCards: program.cards})
 dealer.shuffle()
