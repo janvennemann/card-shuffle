@@ -1,0 +1,22 @@
+{
+  "name": "card-shuffle",
+  "version": "1.0.0",
+  "description": "Card shuffling without the use of built-in array methods",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js -n 52",
+    "test": "./node_modules/bin/mocha"
+  },
+  "bin": {
+    "card-shuffle": "index.js"
+  },
+  "author": "Jan Vennemann",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
