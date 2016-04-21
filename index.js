@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var Dealer = require('./lib/Dealer')
-var program = require('commander')
+import Dealer from './lib/Dealer'
+import program from 'commander'
 
 program
   .version('1.0.0')
