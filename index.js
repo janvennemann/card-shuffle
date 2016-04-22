@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var Dealer = require('./lib/dealer')
+var shuffleDeck = require('./lib/dealer')
 var program = require('commander')
 
 program
@@ -9,5 +9,5 @@ program
   .option('-n, --cards <n>', 'Number of cards in the deck', parseInt)
   .parse(process.argv)
 
-var dealer = new Dealer({numberOfCards: program.cards})
-dealer.shuffle()
+var rounds = shuffleDeck(program.cards)
+console.log(rounds)
