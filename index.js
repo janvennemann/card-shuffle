@@ -2,6 +2,7 @@
 
 var shuffleDeck = require('./lib/dealer')
 var program = require('commander')
+var chalk = require('chalk')
 
 program
   .version('1.0.0')
@@ -9,5 +10,6 @@ program
   .option('-n, --cards <n>', 'Number of cards in the deck', parseInt)
   .parse(process.argv)
 
+console.log('Start shuffling of %s cards...', program.cards)
 var rounds = shuffleDeck(program.cards)
-console.log(rounds)
+console.log('It took ' + chalk.green.bold('%s') + ' rounds to return the cards into original order.', rounds)
