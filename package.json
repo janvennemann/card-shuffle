@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js -n 52",
-    "test": "./node_modules/bin/mocha"
+    "test": "./node_modules/.bin/mocha"
   },
   "bin": {
     "card-shuffle": "index.js"
