@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var Dealer = require('./lib/Dealer')
+var Dealer = require('./lib/dealer')
 var program = require('commander')
 
 program
