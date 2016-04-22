@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import Dealer from './lib/Dealer'
+import shuffleDeck from './lib/dealer'
 import program from 'commander'
 
 program
@@ -9,5 +9,5 @@ program
   .option('-n, --cards <n>', 'Number of cards in the deck', parseInt)
   .parse(process.argv)
 
-const dealer = new Dealer({numberOfCards: program.cards})
-dealer.shuffle()
+var rounds = shuffleDeck(program.cards)
+console.log(rounds)
