@@ -2,13 +2,14 @@
   "name": "card-shuffle",
   "version": "1.0.0",
   "description": "Card shuffling without the use of built-in array methods",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel-node index.js -n 52",
-    "test": "./node_modules/.bin/mocha"
+    "start": "./node_modules/.bin/babel-node src/index.js -n 52",
+    "build": "gulp build",
+    "test": "gulp test"
   },
   "bin": {
-    "card-shuffle": "index.js"
+    "card-shuffle": "src/index.js"
   },
   "author": "Jan Vennemann",
   "license": "MIT",
@@ -16,6 +17,11 @@
     "babel-cli": "^6.7.7",
     "babel-preset-es2015-node": "^5.0.3",
     "chai": "^3.5.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-mocha": "^2.2.0",
     "mocha": "^2.4.5"
   },
   "dependencies": {
