@@ -1,8 +1,11 @@
 # card-shuffle
 Shuffling cards with a doubly linked list.
 
+## Install
+Clone this repo and run `npm install`
+
 ## Usage
-Clone this repo and run the following command:
+To start shuffling a given number of cards run the following:
 ```
 node src/index.js -n <cards>
 ```
