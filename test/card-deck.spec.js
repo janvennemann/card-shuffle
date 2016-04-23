@@ -1,5 +1,5 @@
 var chai = require('chai')
-var CardDeck = require('../lib/card-deck')
+var CardDeck = require('../src/card-deck')
 
 var should = chai.should()
 

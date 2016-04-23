@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var shuffleDeck = require('./lib/dealer')
+var shuffleDeck = require('./dealer')
 var program = require('commander')
 var chalk = require('chalk')
 

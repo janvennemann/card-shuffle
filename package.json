@@ -4,7 +4,7 @@
   "description": "Card shuffling without the use of built-in array methods",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js -n 52",
+    "start": "node src/index.js",
     "test": "./node_modules/.bin/mocha"
   },
   "bin": {
