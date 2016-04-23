@@ -13,7 +13,7 @@ function shuffleDeck(numberOfCards) {
   var hand = createDeck(numberOfCards)
   var startingHand = copyDeck(hand)
   var rounds = 0
-  var maxTrys = numberOfCards * 20
+  var maxTrys = numberOfCards * 200
 
   do {
     var table = doOneShuffleRound(hand)
