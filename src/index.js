@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import shuffleDeck from './lib/dealer'
+import shuffleDeck from './dealer'
 import program from 'commander'
 
 program

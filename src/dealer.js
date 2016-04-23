@@ -8,13 +8,13 @@ import CardDeck from './card-deck'
  * @return {number} Rounds it took to return the deck to its original order
  */
 export default function shuffleDeck(numberOfCards) {
-  var hand = createDeck(numberOfCards)
-  var startingHand = Object.assign({}, hand)
-  var rounds = 0
-  var maxTrys = numberOfCards * 20
+  let hand = createDeck(numberOfCards)
+  const startingHand = Object.assign({}, hand)
+  let rounds = 0
+  const maxTrys = numberOfCards * 20
 
   do {
-    var table = doOneShuffleRound(hand)
+    let table = doOneShuffleRound(hand)
     hand = table
     rounds += 1
 
@@ -34,9 +34,9 @@ export default function shuffleDeck(numberOfCards) {
  * @return {CardDeck} The newly created deck
  */
 function createDeck(numberOfCards) {
-  var deck = new CardDeck()
-  for (var i = 0; i < numberOfCards; i++) {
-    var cardValue = Math.floor(Math.random() * (10 - 1) + 1)
+  let deck = new CardDeck()
+  for (let i = 0; i < numberOfCards; i++) {
+    let cardValue = Math.floor(Math.random() * (10 - 1) + 1)
     deck.pushHead(cardValue)
   }
 
@@ -56,9 +56,9 @@ function createDeck(numberOfCards) {
  * @return {CardDeck} table Deck of cards on the table
  */
 function doOneShuffleRound(hand) {
-  var table = new CardDeck()
+  let table = new CardDeck()
   while (!hand.isEmpty()) {
-    var topCard = hand.popHead()
+    let topCard = hand.popHead()
     table.pushHead(topCard)
     if (hand.size > 1) {
       topCard = hand.popHead()
@@ -75,8 +75,8 @@ function doOneShuffleRound(hand) {
  * @return {Boolean} True if the decks are in the same order, false otherwise
  */
 function hasSameOrder(hand, startingHand) {
-  var currentHandCard = hand.head
-  var startingHandCard = startingHand.head
+  let currentHandCard = hand.head
+  let startingHandCard = startingHand.head
   while (currentHandCard !== null) {
     if (currentHandCard.data !== startingHandCard.data) {
       return false
