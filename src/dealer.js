@@ -11,7 +11,7 @@ export default function shuffleDeck(numberOfCards) {
   let hand = createDeck(numberOfCards)
   const startingHand = Object.assign({}, hand)
   let rounds = 0
-  const maxTrys = numberOfCards * 20
+  const maxTrys = numberOfCards * 200
 
   do {
     let table = doOneShuffleRound(hand)
