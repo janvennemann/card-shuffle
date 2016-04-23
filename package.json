@@ -4,7 +4,7 @@
   "description": "Card shuffling without the use of built-in array methods",
   "main": "src/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel-node src/index.js -n 52",
+    "start": "./node_modules/.bin/babel-node src/index.js",
     "build": "gulp build",
     "test": "gulp test"
   },
