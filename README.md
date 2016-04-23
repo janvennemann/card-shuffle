@@ -2,7 +2,7 @@
 Shuffling cards with a doubly linked list (using ES6 syntax).
 
 ## Install
-Clone the repo and run `npm install`
+Clone this repo and run `npm install`
 
 ## Usage
 The ES6 version can be transpiled on the fly through `babel-node` which is configured as the npm start script.
